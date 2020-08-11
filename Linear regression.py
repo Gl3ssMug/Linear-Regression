@@ -31,7 +31,7 @@ class LinearRegression():
     def sigmay(self):
         d1 = 0
         for d in range(len(data)):
-            d1 = d1+(data[d][1])
+            d1 += data[d][1]
         return d1
     
     def ybar(self):
@@ -40,13 +40,13 @@ class LinearRegression():
     def sigmaysq(self):
         e1 = 0
         for e in range(len(data)):
-            e1 = e1+(data[e][1])**2
+            e1 += (data[e][1])**2
         return e1
     
     def sigmaxy(self):
         g1 = 0
         for g in range(len(data)):
-            g1 = g1+((data[g][0])*(data[g][1]))
+            g1 += (data[g][0])*(data[g][1])
         return g1
     
     def SXX(self):
